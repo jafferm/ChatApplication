@@ -46,7 +46,7 @@ int main() {
     std::thread recvThread(receiveMessages, clientSocket);
     recvThread.detach();
 
-    // Send messages
+    // Send messages from here
     std::string message;
     while (true) {
         std::cout<<"Please enter your message:";
